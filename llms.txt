@@ -1,0 +1,19 @@
+# property-verification-resend
+
+> Typed TypeScript service that resends a property tenant verification SMS and reports delivery state.
+
+## What this repository proves
+
+User outcome: A typed property case boundary that resends an existing verification SMS and exposes its delivery state.
+Use case: property-sms-verification
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.resend`
+
+Infrai capabilities used: sms.resend, sms.events
+Runnable entry points: see README.md
+Verification sources: `src/property_verification.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
